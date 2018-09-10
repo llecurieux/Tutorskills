@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>@ViewBag.Title - Mon application ASP.NET</title>
+
+    @Styles.Render("~/Content/css/bootstrap-reboot.css")
+    @Styles.Render("~/Content/css/bootstrap.css")
+
+    @Styles.Render("~/Content/css/bootstrap-grid.css")
+    @Styles.Render("~/Content/css/main.css")
+
+    @Styles.Render("~/Content/css/fonts.css")
+    @Scripts.Render("~/Scripts/webfontloader.min.js")
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto:300,400,500,700:latin']
+            }
+        });
+    </script>
+
+</head>
+<body class="body-bg-white">
+
+    @{
+        Html.RenderPartial("_Header");
+    }
+
+    @RenderBody()
+
+    @Scripts.Render("~/Scripts/jquery-3.2.1.js")
+
+    @Scripts.Render("~/Scripts/jquery.appear.js")
+    @Scripts.Render("~/Scripts/jquery.mousewheel.js")
+    @Scripts.Render("~/Scripts/perfect-scrollbar.js")
+    @Scripts.Render("~/Scripts/jquery.matchHeight.js")
+    @Scripts.Render("~/Scripts/svgxuse.js")
+    @Scripts.Render("~/Scripts/imagesloaded.pkgd.js")
+    @Scripts.Render("~/Scripts/Headroom.js")
+    @Scripts.Render("~/Scripts/velocity.js")
+    @Scripts.Render("~/Scripts/ScrollMagic.js")
+    @Scripts.Render("~/Scripts/jquery.waypoints.js")
+    @Scripts.Render("~/Scripts/jquery.countTo.js")
+    @Scripts.Render("~/Scripts/popper.min.js")
+    @Scripts.Render("~/Scripts/material.min.js")
+    @Scripts.Render("~/Scripts/bootstrap-select.js")
+    @Scripts.Render("~/Scripts/smooth-scroll.js")
+    @Scripts.Render("~/Scripts/selectize.js")
+    @Scripts.Render("~/Scripts/swiper.jquery.js")
+    @Scripts.Render("~/Scripts/moment.js")
+    @Scripts.Render("~/Scripts/daterangepicker.js")
+    @Scripts.Render("~/Scripts/simplecalendar.js")
+    @Scripts.Render("~/Scripts/fullcalendar.js")
+    @Scripts.Render("~/Scripts/isotope.pkgd.js")
+    @Scripts.Render("~/Scripts/ajax-pagination.js")
+    @Scripts.Render("~/Scripts/Chart.js")
+    @Scripts.Render("~/Scripts/chartjs-plugin-deferred.js")
+    @Scripts.Render("~/Scripts/circle-progress.js")
+    @Scripts.Render("~/Scripts/loader.js")
+    @Scripts.Render("~/Scripts/run-chart.js")
+    @Scripts.Render("~/Scripts/jquery.magnific-popup.js")
+    @Scripts.Render("~/Scripts/jquery.gifplayer.js")
+    @Scripts.Render("~/Scripts/mediaelement-and-player.js")
+    @Scripts.Render("~/Scripts/mediaelement-playlist-plugin.min.js")
+    @Scripts.Render("~/Scripts/base-init.js")
+    @Scripts.Render("~/fonts/fontawesome-all.js")
+    @Scripts.Render("~/Scripts/bootstrap.bundle.js")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
